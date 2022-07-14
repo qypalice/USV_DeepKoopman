@@ -1,0 +1,11 @@
+Starting unmasked_Adam_lr_0.001_hyper_[1.0, 3.0, 0.3, 1e-07, 1e-07, 1e-07, 0.0, 10]_batch_16-07-14-05-48 experiment
+Use unmasked matrix as linear system.
+Use Adam as optimaizer, with learning rate 0.001.
+The structure of encoder is [3, 32, 64, 8], and decoder is [11, 128, 64, 32, 3].
+Hyper parameter used are [1.0, 3.0, 0.3, 1e-07, 1e-07, 1e-07, 0.0, 10]
+The size of batch is 16
+=> no checkpoint found at './weight/unmasked_Adam_lr_0.001_hyper_[1.0, 3.0, 0.3, 1e-07, 1e-07, 1e-07, 0.0, 10]_batch_16-07-14-05-48.pt'
+old model loaded.
+val_loss: 2.183
+val_loss: 0.618
+model saved.

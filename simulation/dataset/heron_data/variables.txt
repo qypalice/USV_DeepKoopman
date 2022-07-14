@@ -1,0 +1,11 @@
+1: time
+2: x
+3: y
+4: \psi
+5: v
+6: r
+7: v_dot
+8: r_dot
+9: left_thrust
+10: right_thrust
+11: ignore
