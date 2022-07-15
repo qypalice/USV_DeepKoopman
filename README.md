@@ -9,14 +9,6 @@ All the code are classified by its usage at root directory,. Further explanation
 ./ros_implementation    This folder contains algorithm implementation on Aion R6 rover\
 ./KTMPC                 This ia a temporary folder that contains a new MPC design\
 
-
-
-./dataset      This folder contains numpy files containing simulated trajectories as datasets\
-         \
-      \
-       
-      This folder contains .pt files saving the parameters of NN models
-
 ### './simulation' folder introduction
 './simulation' folder is uesd to generate linear model of USV and implement the MPC design. The folder include self-defined packages, sample codes and notebook experiment recording.
 #### Subfolders
