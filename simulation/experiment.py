@@ -26,7 +26,9 @@ if __name__ == '__main__':
         'type':'unmasked',
         'hyper':[1.0,3.0,0.3,1e-7,1e-7,1e-7,0.,10],
         'optim':['Adam',1e-3],#first give the optimizer name, then earning rate. For Adadelta, also need forgetting rate
-        'batch size': 16
+        'batch size': 16,
+        'IsOld':'N' #'N'for new model, old model put file name, 
+                    # e.g.'unmasked_Adam_lr_0.001_hyper_[1.0, 3.0, 0.3, 1e-07, 1e-07, 1e-07, 0.0, 10]_batch_16-07-14-05-48'
     }
 
     epochs = 200

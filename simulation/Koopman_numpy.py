@@ -22,9 +22,6 @@ class Koopman_numpy:
                     self.de['bias'].append(param)
         if 'K.layer.mask' in params:
             K = params['K.layer.weight']*params['K.layer.mask']
-            #K = 0.5*params['K.layer.weight']*params['K.layer.mask']
-            #for i in range(K.shape[0]-1):
-                #K[i,i+1] = 1
         else:
             K = params['K.layer.weight']
         self.A = K[:,:-2]

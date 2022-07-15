@@ -75,6 +75,7 @@ def simulation(x_range,u_range,SimLength=10,Ntraj=1000,Ts=0.01):
     pbar.close()
     return X,U
 
+
 def produce_dataset(x_range,u_range,SimLength=10,Ntraj=1000,Ts=0.01):
     print("Start simulating...")
     X_train,U_train = simulation(x_range,u_range,SimLength,int(0.6*Ntraj),Ts)

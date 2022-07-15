@@ -218,8 +218,10 @@ def train_the_model(train_loader, val_loader, arg, epochs=200):
     print(f'Trainer created.', end = "\n")
 
     # define file names
-    file_name=f"{arg['type']}_{arg['optim'][0]}_lr_{str(arg['optim'][1])}_hyper_{str(arg['hyper'])}_batch_{str(arg['batch size'])}-{datetime.utcnow().strftime('%m-%d-%H-%M')}"
-
+    if arg['IsOld'] == 'N':
+        file_name=f"{arg['type']}_{arg['optim'][0]}_lr_{str(arg['optim'][1])}_hyper_{str(arg['hyper'])}_batch_{str(arg['batch size'])}-{datetime.utcnow().strftime('%m-%d-%H-%M')}"
+    else:
+        file_name = arg['IsOld']
     csv_logger = CSVLogger(filename=f'./logs/{file_name}.csv',
                        fieldnames=['epoch', 'train_loss', 'val_loss'])
     saved_model_path = './weight/{}.pt'.format(file_name)
